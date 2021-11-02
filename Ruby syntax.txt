@@ -1,0 +1,93 @@
+irb --simple-prompt
+ruby -cw filename ->check program for syntax error
+
+2 + 3 -> addition
+2 - 3 -> subtraction
+2 * 3 -> multiplication
+2 / 3 -> division
+2 / 3.0 -> division w/floating-point result
+
+x = 1 -> binds a local variable (on left) to an object (on right)
+string = "Hello"
+
+x == y -> compare two values
+
+x = "100".to_i
+s = "100"
+x = s.to_i -> string-to-integer conversion
+
+print "Hello" -> prints exactly
+puts "Hello" -> adds a newline to the string it outputs
+x = "Hello"
+puts x
+x = "Hello"
+print x
+x = "Hello"
+p x -> p outputs an inspect string - may contain extra info
+
+gets
+string = gets -> input
+
+x = 1
+y = 1
+if x == y
+   puts "Yes!"
+else
+   puts "No!"
+end -> Conditional statements always end with the word end
+
+true
+false
+nil -> special value objects - true & false serve as return values for conditional 	       expressions. Nil is a nonobject indicating the absence of a value or result.        False & Nil cause a conditional expression to evaluate as false. all else =        true
+
+self -> default object - Self is a role that different objects play. Method calls that         don't specify a calling object are called on self
+
+# A comment -> puts comments in code files; ignored by interpreter.
+x = 1 #A comment
+
+
+
+Ruby Identifiers
+
+Variables:
+-Local (local variables start w/lowercase letter or underscore & consist of 		letters,underscores,and/or digits.)((x,string,abc,var1,start_value,firstName)) 	= all valid local variable names. *Note: Ruby convention uses underscores 		rather than camel case making firstName actually first_name**
+
+-Instance (instance variables start with a single (@) and consist of the same 	character set as local variables. Serves the purpose of storing info within 	individual objects.) ((@age and @last_name))
+
+-Class (class variables store info per class hierarchy follow the same rules as 	instance variables except they start with two (@@)) ((@@running_total)
+
+-Global (Global variables are recognizable by their leading ($)) (($population))
+
+-Constants - Constants begin w/uppercase A, String, FirstName, STDIN. Ruby convention 	     is to use either camel case (FirstName) or underscore-separated.
+
+-Keywords - Ruby has numerous keywords. ((about 40)) ((ex: def, class, if))
+
+-Method names - follow same rules & conventions as local variables except they can end with ?,!, or =.
+
+
+
+Commonly used Ruby command-line switches
+
+-c --> Checks syntax of program w/out executing the program ((ruby -c c2f.rb))
+-w --> Gives warning messages during program execution ((ruby -w c2f.rb))
+-e --> Execute code provided in quotes on the command line ((ruby -e 'puts "Code demo!"'))
+-l --> Prints a newline after every line of output (( ruby -le 'print "+ newline!"'))
+-rname --> Requires the named feature ((ruby -rprofile))
+-v --> Shows Ruby version info & executes the program in verbose mode((ruby -v))
+--version --> Shows Ruby version info ((ruby --version))
+-h --> Shows info about all command-line switches for interpreter ((ruby -h))
+
+
+Python***
+Java*
+C#*
+Ruby*
+Node*
+C++**
+CSS
+HTML
+Swift
+
+
+
+
